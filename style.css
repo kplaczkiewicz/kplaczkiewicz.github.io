@@ -75,7 +75,7 @@ header .menu-bar .menu {
 	justify-content: center;
 }
 
-header .menu-bar .menu a {
+header .menu-bar .menu li a {
     display: inline-block;
 	text-decoration: none;
 	color: white;
@@ -83,6 +83,8 @@ header .menu-bar .menu a {
 	font-weight: 600;
     padding: 0.75rem clamp(1rem, 0.3019rem + 3.0189vw, 2rem);
 	font-size: clamp(0.9375rem, 0.8502rem + 0.3774vw, 1.0625rem);
+    width: 100%;
+    text-align: center;
 }
 
 header .menu-bar .menu a:hover {
@@ -242,6 +244,10 @@ footer {
 }
 
 @media (max-width: 767px) {
+    header .container {
+        padding: 0;
+    }
+    
     header .top-bar i {
         margin-right: .5rem;
     }
@@ -251,6 +257,10 @@ footer {
 		align-items: center;
 		padding: 1rem 0;
 	}
+
+    header .menu-bar .menu li {
+        width: 100%;
+    }
 
     .two-column .div-img {
         order: -1;
